@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="ditTitle">Adicione uma Essência</div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="divCard">
+    <ion-card>
+
+
+      <div>
+        <form novalidate [formGroup]="formularioReativo" (ngSubmit)="confrimarEnvio()">
+
+
+<!--      AVALIAÇÃO   -->
+          <div >
+            <ion-item>
+              <ion-label>Avaliação</ion-label>
+              <ion-select class="form-control" formControlName="avaliacao" [ngModel]="form.avaliacao">
+                <ion-select-option value=""></ion-select-option>
+                <ion-select-option value="1">1</ion-select-option>
+                <ion-select-option value="2">2</ion-select-option>
+                <ion-select-option value="3">3</ion-select-option>
+                <ion-select-option value="4">4</ion-select-option>
+                <ion-select-option value="5">5</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+
+
+<!--          NOME    -->
+          <div>
+            <ion-item>
+              <ion-input type="text" class="form-control" formControlName="nome"
+                         placeholder="Nome" [ngModel]="form.nome"></ion-input>
+              <small *ngIf="formularioReativo.get('nome').valid && formularioReativo.get('nome').touched"
+                     class="form-text text-success">OK
+              </small>
+              <small *ngIf="!formularioReativo.get('nome').valid && formularioReativo.get('nome').touched"
+                     class="form-text text-danger">Avaliação Inválida
+              </small>
+            </ion-item>
+          </div>
+
+
+<!--          MARCA-->
+          <div>
+            <ion-item>
+              <ion-input type="text" class="form-control" formControlName="marca"
+                         placeholder="Marca" [ngModel]="form.marca"></ion-input>
+              <small *ngIf="formularioReativo.get('marca').valid && formularioReativo.get('marca').touched"
+                     class="form-text text-success">OK
+              </small>
+              <small *ngIf="!formularioReativo.get('marca').valid && formularioReativo.get('marca').touched"
+                     class="form-text text-danger">Avaliação Inválida
+              </small>
+            </ion-item>
+          </div>
+
+
+<!--          SABOR   -->
+          <div>
+            <ion-item>
+              <ion-input type="text" class="form-control" formControlName="sabor"
+                         placeholder="Sabor" [ngModel]="form.sabor"></ion-input>
+              <small *ngIf="formularioReativo.get('sabor').valid && formularioReativo.get('sabor').touched"
+                     class="form-text text-success">OK
+              </small>
+              <small *ngIf="!formularioReativo.get('sabor').valid && formularioReativo.get('sabor').touched"
+                     class="form-text text-danger">Avaliação Inválida
+              </small>
+            </ion-item>
+          </div>
+
+<!--          BOTAO ADD-->
+          <ion-button id="botaoAdd"  type="submit" expand="full" [disabled]="!formularioReativo.valid"> Add </ion-button>
+        </form>
+
+      </div>
+    </ion-card>
+  </div>
+
+</ion-content>

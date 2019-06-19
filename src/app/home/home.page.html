@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar style="--background: black; color: #339966">
+    <ion-title>
+      Best Essence
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen style="--background: rgb(0, 0, 0)">
+  <ion-fab vertical="end" horizontal="end" (click)="openPopover()">
+    <ion-fab-button color="primary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div *ngFor="let essencia of essencias">
+    <ion-card>
+      <ion-card-header>Avaliação:  {{ essencia.avaliacao }} </ion-card-header>
+      <ion-card-title>Nome:  {{ essencia.nome }} </ion-card-title>
+      <ion-card-subtitle>Marca:  {{ essencia.marca }} </ion-card-subtitle>
+      <ion-card-content>
+        <p>Sabor: {{ essencia.sabor }} </p>
+      </ion-card-content>
+      <!--<ion-button expand="full" (click)="atualizarEssencia($event)">Editar</ion-button>-->
+      <ion-button class="botaoDeletar" expand="full" (click)="deleteEssencia(essencia.id)" color="danger">
+        Deletar
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>

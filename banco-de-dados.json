@@ -1,0 +1,18 @@
+{
+  "essencias": [
+    {
+      "avaliacao": 5,
+      "nome": "Happy",
+      "marca": "Ziggs",
+      "descricao": "Muito boa",
+      "id": 1
+    },
+    {
+      "avaliacao": "4",
+      "nome": "Melancia",
+      "marca": "Mizzo",
+      "sabor": "Melancia",
+      "id": 2
+    }
+  ]
+}

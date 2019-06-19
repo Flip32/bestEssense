@@ -1,0 +1,27 @@
+ion-card{
+  background: rgba(56, 58, 62, 0.58);
+  color: black;
+  font-weight: bolder;
+}
+
+ion-card-title{
+  font-size: 20pt;
+  color: black;
+  margin-left: 7px;
+}
+
+ion-card-subtitle{
+  text-decoration: underline;
+  margin-left: 12px;
+  color: black;
+  font-size: medium;
+}
+
+ion-card-content p{
+  font-size: large;
+}
+
+
+ion-fab ion-icon{
+  color: black;
+}
