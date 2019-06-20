@@ -2,7 +2,7 @@
 
 ## App em Ionic - Avalia Essências (HOOKAH)
 ### Em desenvolvimento
-### Criado para testar Api em Node.js integrado com Banco MySql - https://github.com/Flip32/web-api
+### Criado para testar Api em Node.js integrado com Banco MySql - https://github.com/Flip32/api-bestessence
 
 ### Para Rodar é necessário ter instalado na máquina:
 #### Node, npm, Ionic
