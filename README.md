@@ -1,6 +1,6 @@
 # BestEssense
 
-##App em Ionic - Avalia Essências (HOOKAH)
+## App em Ionic - Avalia Essências (HOOKAH)
 ### Em desenvolvimento
 ### Criado para testar Api em Node.js integrado com Banco MySql - https://github.com/Flip32/web-api
 
