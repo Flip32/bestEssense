@@ -16,4 +16,4 @@ ionic serve
 
 ### Para Rodar localmente com a api e o bando de dados é necessário:
 #### Ter instalado MySql / Criar banco com nome essencias / Não é necessário criar tabelas
-#### executar api - para mais informações acesse https://github.com/Flip32/web-api
+#### executar api - para mais informações acesse https://github.com/Flip32/api-bestessence
